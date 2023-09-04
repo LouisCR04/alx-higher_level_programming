@@ -1,8 +1,4 @@
-#!/usr/bin/python3
-import os
-import py_compile
-
-src_file = os.environ.get('PYFILE', '')
-pyc_file = src_file + 'c'
-
-py_compile.compile(src_file, pyc_file)
+#!/bin/bash
+python -m py_compile "$PYFILE"
+mv __pycache__/* "$PYFILE"c
+rm -rf __pycache__
