@@ -3,7 +3,7 @@ import variable_load_5
 
 
 def printer():
-    print(variable_load_5.a)
+    print("{}".format(variable_load_5.a))
 
 
 if __name__ == "__main__":
