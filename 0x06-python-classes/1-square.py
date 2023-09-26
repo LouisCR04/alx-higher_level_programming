@@ -14,7 +14,7 @@ class Square:
     """
 
 
-def __init__(self, size):
-    """Initializer _Square__size"""
+    def __init__(self, size):
+        """Initializer _Square__size"""
 
-    self.__size = size
+        self.__size = size
