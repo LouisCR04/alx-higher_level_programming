@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 # -*- coding: UTF-8 -*-
 """
-0-square.py: Empty class Square that defines a square
+1-square.py: Defines a square
 """
 
 
