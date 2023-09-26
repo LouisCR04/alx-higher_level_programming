@@ -13,7 +13,6 @@ class Square:
 
     """
 
-
     def __init__(self, size):
         """Initializer _Square__size"""
 
