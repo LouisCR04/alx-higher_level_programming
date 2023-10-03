@@ -4,17 +4,17 @@
 import unittest
 max_integer = __import__('6-max_integer').max_integer
 
+
 class TestMaxInteger(unittest.TestCase):
-    
     def test_normal_list(self):
         lista = [1, 2, 3, 4]
         self.assertEqual(max_integer(lista), 4)
-        
+
     def test_with_string(self):
         with self.assertRaises(TypeError):
             lista = [1, "paula", 3, 4]
             max_integer(lista)
-    
+
     def test_with_negative(self):
         lista = [1, 2, 3, -4]
         self.assertEqual(max_integer(lista), 3)
@@ -23,5 +23,6 @@ class TestMaxInteger(unittest.TestCase):
         lista = []
         self.assertIsNone(max_integer(lista))
 
-if __name__ == '__main__': 
-    unittest.main()    
+
+if __name__ == '__main__':
+    unittest.main()
