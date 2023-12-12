@@ -4,7 +4,7 @@ exports.esrever = function (list) {
 
   let i = list.length - 1;
 
-  while (i > 0) {
+  while (i >= 0) {
     rev.push(list[i]);
     i--;
   }
