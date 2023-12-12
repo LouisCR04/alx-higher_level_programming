@@ -7,13 +7,13 @@ module.exports = class Rectangle {
     }
   }
 
-  print () {
+  print (char = 'X') {
     let i = 0;
     while (i < this.height) {
       let j = 0;
 
       while (j < this.width) {
-        process.stdout.write('X');
+        process.stdout.write(char);
         j++;
       }
 
