@@ -6,6 +6,8 @@
 
 
 class Node:
+    """Represent a node in a singly-linked list."""
+
     def __init__(self, data, next_node=None):
         if not isinstance(data, int):
             raise TypeError("data must be an integer")
@@ -34,6 +36,8 @@ class Node:
 
 
 class SinglyLinkedList:
+    """Represent a singly-linked list."""
+
     def __init__(self):
         self.__head = None
 
