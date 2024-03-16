@@ -1,30 +1,17 @@
 #!/usr/bin/python3
 
-Square = __import__('102-square').Square
+SinglyLinkedList = __import__('100-singly_linked_list').SinglyLinkedList
 
-s_5 = Square(5)
-s_6 = Square(6)
-
-if s_5 < s_6:
-    print("Square 5 < Square 6")
-if s_5 <= s_6:
-    print("Square 5 <= Square 6")
-if s_5 == s_6:
-    print("Square 5 == Square 6")
-if s_5 != s_6:
-    print("Square 5 != Square 6")
-if s_5 > s_6:
-    print("Square 5 > Square 6")
-if s_5 >= s_6:
-    print("Square 5 >= Square 6")
-
-s1 = Square(3)
-s2 = Square(3)
-print(s1 == s2)
-
-s1 = Square(4)
-s2 = Square(3)
-print(s1 > s2)
-print(s1 >= s2)
-print(s1 < s2)
-print(s1 <= s2)
+sll = SinglyLinkedList()
+sll.sorted_insert(2)
+sll.sorted_insert(5)
+sll.sorted_insert(3)
+sll.sorted_insert(10)
+sll.sorted_insert(1)
+sll.sorted_insert(-4)
+sll.sorted_insert(-3)
+sll.sorted_insert(4)
+sll.sorted_insert(5)
+sll.sorted_insert(12)
+sll.sorted_insert(3)
+print(sll)
