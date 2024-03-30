@@ -126,3 +126,13 @@ class Rectangle(Base):
                     self.__x = v
                 elif k == "y":
                     self.__y = v
+
+    def to_dictionary(self):
+        """Returns the dictionary rep of a rec"""
+        return {
+            "id": self.id,
+            "width": self.__width,
+            "height": self.__height,
+            "x": self.__x,
+            "y": self.__y
+        }
