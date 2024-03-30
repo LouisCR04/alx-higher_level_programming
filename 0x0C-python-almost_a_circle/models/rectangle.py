@@ -9,10 +9,10 @@ class Rectangle(Base):
     """A rec class that inherits from base"""
     def __init__(self, width, height, x=0, y=0, id=None):
         """Initializes a new rectangle"""
-        self.__width = width
-        self.__height = height
-        self.__x = x
-        self.__y = y
+        self.width = width
+        self.height = height
+        self.x = x
+        self.y = y
         super().__init__(id)
 
     @property
@@ -69,7 +69,7 @@ class Rectangle(Base):
 
     def area(self):
         """Returns Area of the Rectangle"""
-        return self.__width * self.__height
+        return self.width * self.height
 
     def display(self):
         """Prints the rectangle using '#' character"""
@@ -96,43 +96,43 @@ class Rectangle(Base):
             for arg in args:
                 if a == 0:
                     if arg is None:
-                        self.__init__(self.__width, self.__height,
-                                      self.__x, self.__y)
+                        self.__init__(self.width, self.height,
+                                      self.x, self.y)
                     else:
                         self.id = arg
                 elif a == 1:
-                    self.__width = arg
+                    self.width = arg
                 elif a == 2:
-                    self.__height = arg
+                    self.height = arg
                 elif a == 3:
-                    self.__x = arg
+                    self.x = arg
                 elif a == 4:
-                    self.__y = arg
+                    self.y = arg
                 a += 1
 
         elif kwargs and len(kwargs) != 0:
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
-                        self.__init__(self.__width, self.__height,
-                                      self.__x, self.__y)
+                        self.__init__(self.width, self.height,
+                                      self.x, self.y)
                     else:
                         self.id = v
                 elif k == "width":
-                    self.__width = v
+                    self.width = v
                 elif k == "height":
-                    self.__height = v
+                    self.height = v
                 elif k == "x":
-                    self.__x = v
+                    self.x = v
                 elif k == "y":
-                    self.__y = v
+                    self.y = v
 
     def to_dictionary(self):
         """Returns the dictionary rep of a rec"""
         return {
             "id": self.id,
-            "width": self.__width,
-            "height": self.__height,
-            "x": self.__x,
-            "y": self.__y
+            "width": self.width,
+            "height": self.height,
+            "x": self.x,
+            "y": self.y
         }
