@@ -95,7 +95,8 @@ class Rectangle(Base):
             for arg in args:
                 if a == 0:
                     if arg is None:
-                        self.__init__(self.__width, self.__height, self.__x, self.__y)
+                        self.__init__(self.__width, self.__height,
+                                      self.__x, self.__y)
                     else:
                         self.id = arg
                 elif a == 1:
@@ -112,7 +113,8 @@ class Rectangle(Base):
             for k, v in kwargs.items():
                 if k == "id":
                     if v is None:
-                        self.__init__(self.__width, self.__height, self.__x, self.__y)
+                        self.__init__(self.__width, self.__height,
+                                      self.__x, self.__y)
                     else:
                         self.id = v
                 elif k == "width":
